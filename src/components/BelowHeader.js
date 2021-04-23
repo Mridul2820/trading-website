@@ -27,7 +27,7 @@ function BelowHeader({ lightMode }) {
                 </div>
                 <div className="main" style={{maxWidth: '40%', color: '#fff'}}>
                     <div className="upperHeading">
-                        <span>Best Price to Trade</span>
+                        <h3>Best Price to Trade</h3>
                     </div>
                     <div 
                         className="middle" 

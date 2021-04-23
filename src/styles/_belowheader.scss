@@ -23,6 +23,10 @@
                     font-weight: 400;
                     font-size: 40px;
                     color: $primary-color;
+
+                    @media screen and (max-width: $bp-medium1) {
+                        font-size: 20px;
+                    }
                 }
             }
             .subHeader {
@@ -35,17 +39,28 @@
                     font-weight: 300;
                     opacity: .45;
                     font-size: 20px;
+
+                    @media screen and (max-width: $bp-medium1) {
+                        font-size: 13px;
+                    }
                 }
             }
         }
         .main {
             .upperHeading {
                 color: #69686a;
-                font-weight: 300;
-                font-size: 28px;
-                letter-spacing: .75px;
                 box-sizing: border-box;
                 text-align: center !important;
+
+                h3 {
+                    font-weight: 300;
+                    font-size: 28px;
+                    letter-spacing: .75px;
+
+                    @media screen and (max-width: $bp-medium1) {
+                        font-size: 16px;
+                    }
+                }
             }
             .middle {
                 padding-bottom: 10px;
@@ -61,6 +76,11 @@
                         font-weight: 400;
                         font-size: 60px;
                     }
+
+                    @media screen and (max-width: $bp-medium1) {
+                        font-weight: 400;
+                        font-size: 30px;
+                    }
                 }
             }
             .lowerHeading {
@@ -73,6 +93,10 @@
                     font-weight: 300;
                     font-size: 16px;
                     letter-spacing: .75px;
+
+                    @media screen and (max-width: $bp-medium1) {
+                        font-size: 14px;
+                    }
                 }
             }
         }
