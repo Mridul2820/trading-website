@@ -1,8 +1,7 @@
 import React from 'react';
-import Button from '@material-ui/core/Button';
 import TelegramIcon from '@material-ui/icons/Telegram';
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
-import { Switch, withStyles } from '@material-ui/core'
+import { Button, Switch, withStyles } from '@material-ui/core'
 
 function Header({ lightMode, setlightMode }) {
 
@@ -50,45 +49,36 @@ function Header({ lightMode, setlightMode }) {
             </div>
             <div className="header-width header-buttons">
                 <div className="header-button">
-                    <Button 
+                    <button 
+                        className="header-button-single"
                         style={{
                             backgroundColor: lightMode ? '#f8f9fa' :  '#2e3241' , 
                             color: lightMode ? '#2e3241' : '#fff', 
-                            transition: "all .5s",
-                            borderRadius: '10px',
-                            fontSize: '16px',
-                            padding: '4px 14px',
-                            fontWeight: 400,
+                            transition: "all .5s"
                         }}
                         >INR <ArrowDropDownIcon />
-                    </Button>
+                    </button>
                 </div>
                 <div className="header-button">
-                    <Button 
+                    <button 
+                        className="header-button-single"
                         style={{
                             backgroundColor: lightMode ? '#f8f9fa' :  '#2e3241' , 
                             color: lightMode ? '#2e3241' : '#fff', 
-                            transition: "all .5s",
-                            borderRadius: '10px',
-                            fontSize: '16px',
-                            padding: '4px 14px',
-                            fontWeight: 400,
+                            transition: "all .5s"
                         }}
                         >BTC <ArrowDropDownIcon />
-                    </Button>
+                    </button>
                 </div>
                 <div className="header-button">
-                    <Button 
+                    <button 
+                        className="header-button-single"
                         style={{
                             backgroundColor: lightMode ? '#f8f9fa' :  '#2e3241' , 
                             color: lightMode ? '#2e3241' : '#fff', 
-                            transition: "all .5s",
-                            borderRadius: '10px',
-                            fontSize: '16px',
-                            padding: '4px 14px',
-                            fontWeight: 400,
+                            transition: "all .5s"
                         }}>BUY BTC
-                    </Button>
+                    </button>
                 </div>
             </div>
             <div className="header-width header-right">

@@ -1,7 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
+// colors
 $primary-color : #3dc6c1;
 $secondary-color : #da5757;
+
+// Break Points
+$bp-large1 : 1200px;
+$bp-large2 : 992px;
+$bp-large3 : 960px;
+$bp-medium1 : 768px;
+$bp-small1 : 576px;
+$bp-small2 : 415px;
 
 * {
     padding: 0;
