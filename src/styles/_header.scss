@@ -3,6 +3,7 @@
     width: 100%;
     padding: 20px 30px 0;
     align-items: center;
+    justify-content: space-between;
 
     @media screen and  (max-width: $bp-medium1){
         flex-direction: column;
@@ -13,23 +14,33 @@
 
 .header-logo {
     max-width: 100%;
+    flex: 0 0 100%;
+    text-align: left;
 
     @media screen and  (min-width: $bp-small1){
         max-width: 58.333333%;
+        flex: 0 0 58.333333%;
         text-align: center;
     }
 
     @media screen and  (min-width: $bp-medium1){
         max-width:  41.666667%;
+        flex: 0 0 41.666667%;
     }
 
     @media screen and  (min-width: $bp-large2){
         max-width: 33.333333%;
+        flex: 0 0 33.333333%;
     }
 
     a {
         background-color: transparent;
         text-decoration: none;
+        text-align: left;
+
+        @media screen and (max-width: $bp-medium1){
+            text-align: center !important;
+        }
 
         .logo {
             max-width: 100%;
@@ -63,9 +74,10 @@
         margin-top: -23px;
         opacity: 0.8;
         padding:0 15px ;
+        text-align: left;
 
-        @media screen and  (max-width: $bp-small1){
-            text-align: center;
+        @media screen and (max-width: $bp-medium1){
+            text-align: center !important;
         }
 
         span {
@@ -81,17 +93,21 @@
     flex-wrap: wrap;
 
     max-width: 100%;
+    flex: 0 0 100%;
 
     @media  screen and  (min-width: $bp-small1){
         max-width: 100%;
+        flex: 0 0 100%;
     }
 
     @media  screen and  (min-width: $bp-medium1){
         max-width: 16.666667%;
+        flex: 0 0 16.666667%;
     }
 
     @media  screen and  (min-width: $bp-large2 ){
         max-width: 33.333333%;
+        flex: 0 0 33.333333%;
     }
     
     .header-button {
@@ -120,32 +136,37 @@
 }
 
 .header-right {
-    text-align: left;
-
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     flex-wrap: wrap;
     color: $primary-color;
 
     max-width: 100%;
+    flex: 0 0 100%;
 
     @media screen and  (min-width: $bp-small1){
         max-width: 100%;
+        flex: 0 0 100%;
     }
     
     @media screen and  (min-width: $bp-medium1){
         max-width:  41.666667%;
+        flex: 0 0 41.666667%;
     }
 
     @media screen and  (min-width: $bp-large2){
         max-width: 33.333333%;
+        flex: 0 0 33.333333%;
+    }
+
+    @media screen and  (max-width: $bp-large3){
+        justify-content: center;
     }
 
     @media screen and  (max-width: $bp-medium1){
         text-align: center;
     }
-
 
     .progress-bar {
         width: 40px;

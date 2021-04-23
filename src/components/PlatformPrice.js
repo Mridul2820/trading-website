@@ -2,7 +2,8 @@ import React from 'react';
 
 const PlatformPrice = ({ platforms, lightMode }) => {
     return (
-        <table className="platform-price">
+        <div className="platform-price">
+        <table className="platform-price-table">
             <thead>
                 <tr>
                     <th>
@@ -89,6 +90,7 @@ const PlatformPrice = ({ platforms, lightMode }) => {
                 ))}
             </tbody>
         </table>
+        </div>
     )
 }
 

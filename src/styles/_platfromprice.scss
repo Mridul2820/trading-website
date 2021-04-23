@@ -1,20 +1,41 @@
 .platform-price {
+    display: block;
+    width: 100%;
+    padding: 0 25px;
+    overflow-x: auto;
+
+    
+}
+
+.platform-price-table {
     width: 100%;
     max-width: 100%;
     border-collapse: separate;
     border-spacing: 0 1em;
     margin: 0;
-    padding: 0 25px;
     color: #fff;
 
     h4 {
         font-size: 24px;
+        white-space: nowrap;
     }
 
     td, 
     th {
         padding: .75rem;
         vertical-align: top;
+        display: table-cell;
+    }
+
+    td {
+        h4 {
+            @media screen and (max-width: 768px){
+                white-space: nowrap;
+            }
+            @media screen and (max-width: 768px){
+                font-size: 18px; 
+            }
+        }
     }
 
     thead {
