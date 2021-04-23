@@ -2,6 +2,10 @@
     padding: 0px 30px;
     display: block;
 
+    @media screen and (max-width: $bp-small2) {
+        padding: 0 10px;
+    }
+
     .numbers {
         padding: 25px 0px;
         display: flex ;
@@ -27,6 +31,10 @@
                     @media screen and (max-width: $bp-medium1) {
                         font-size: 20px;
                     }
+
+                    @media screen and (max-width: $bp-small2) {
+                        font-size: 18px;
+                    }
                 }
             }
             .subHeader {
@@ -42,6 +50,10 @@
 
                     @media screen and (max-width: $bp-medium1) {
                         font-size: 13px;
+                    }
+
+                    @media screen and (max-width: $bp-small2) {
+                        font-size: 11px;
                     }
                 }
             }
@@ -78,8 +90,11 @@
                     }
 
                     @media screen and (max-width: $bp-medium1) {
-                        font-weight: 400;
                         font-size: 30px;
+                    }
+
+                    @media screen and (max-width: $bp-small2) {
+                        font-size: 20px;
                     }
                 }
             }
@@ -96,6 +111,10 @@
 
                     @media screen and (max-width: $bp-medium1) {
                         font-size: 14px;
+                    }
+
+                    @media screen and (max-width: $bp-small2) {
+                        font-size: 11px;
                     }
                 }
             }

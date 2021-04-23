@@ -62,7 +62,6 @@ function BelowHeader({ lightMode }) {
             <BannerImage 
                 srcLink={"https://finstreet.in/"}
                 srcBanner={"https://hodlinfo.com/static/media/cryptonews.54869ee3.png"}
-                style={{padding: '10px'}}
             />
         </div>
     )

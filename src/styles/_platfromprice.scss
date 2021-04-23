@@ -23,15 +23,29 @@
         padding: .75rem;
         vertical-align: top;
         display: table-cell;
+
+        @media screen and (max-width: $bp-small2) {
+            padding: .45rem;
+        }
+    }
+
+    th {
+        h4 {
+            @media screen and (max-width: $bp-small2) {
+                font-size: 15px;
+            }
+        }
     }
 
     td {
         h4 {
-            @media screen and (max-width: 768px){
+            @media screen and (max-width: $bp-medium1){
+                font-size: 18px; 
                 white-space: nowrap;
             }
-            @media screen and (max-width: 768px){
-                font-size: 18px; 
+
+            @media screen and (max-width: $bp-small2) {
+                font-size: 15px;
             }
         }
     }

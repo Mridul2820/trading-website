@@ -1,7 +1,7 @@
 import React from 'react';
 import TelegramIcon from '@material-ui/icons/Telegram';
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
-import { Button, Switch, withStyles } from '@material-ui/core'
+import { Switch, withStyles } from '@material-ui/core'
 
 function Header({ lightMode, setlightMode }) {
 
@@ -86,7 +86,7 @@ function Header({ lightMode, setlightMode }) {
                     <p>60</p>
                 </div>
                 <div className="telegram-button">
-                    <Button className="telegram"><TelegramIcon style={{marginRight: '10px'}} />Connect Telegram</Button>
+                    <button className="telegram"><TelegramIcon style={{marginRight: '10px'}} />Connect Telegram</button>
                 </div>
                 <div className="toggle-theme">
                     {/* Switch */}
