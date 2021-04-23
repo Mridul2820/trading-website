@@ -12,19 +12,21 @@ import './styles/app.scss'
 const App = () => {
 
     const [platforms] = useState(data)
+    const [lightMode, setlightMode] = useState(false)
 
     return (
         <div className="app">
-            <Header />
-            <BelowHeader />
-            <BannerImage 
-                srcLink={"https://finstreet.in/"}
-                srcBanner={"https://hodlinfo.com/static/media/cryptonews.54869ee3.png"}
+            <Header 
+                lightMode={lightMode} 
+                setlightMode={setlightMode} 
             />
+            <BelowHeader />
+
             <PlatformPrice platforms={platforms} />
             <BannerImage 
                 srcLink={"https://ftx.com/"}
                 srcBanner={"https://hodlinfo.com/static/media/BannerFTXNews.d0cd974b.png"}
+                style={{padding: '20px'}}
             />
             <Footer />
         </div>

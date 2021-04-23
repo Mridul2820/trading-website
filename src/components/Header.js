@@ -2,8 +2,44 @@ import React from 'react';
 import Button from '@material-ui/core/Button';
 import TelegramIcon from '@material-ui/icons/Telegram';
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
+import { Switch, withStyles } from '@material-ui/core'
 
-function Header() {
+function Header({ lightMode, setlightMode }) {
+
+
+    const ISOSwitch = withStyles({
+        root: {
+            width: 60,
+            height: 34,
+            padding: 0,
+        },
+        switchBase: {
+            padding: 4,
+            '&$checked': {
+              transform: 'translateX(26px)',
+              color: '#3dc6c1',
+              '& + $track': {
+                backgroundColor: '#2e3241',
+                opacity: 1,
+                border: 'none',
+              },
+            },
+          },
+          thumb: {
+            width: 26,
+            height: 26,
+            color: '#3dc6c1'
+          },
+          track: {
+            borderRadius: 34 / 2,
+            border: '1px solid #3dc6c1',
+            backgroundColor: '#f8f9fa',
+            opacity: 1,
+            transition: '.5s',
+          },
+          checked: {},
+    })(Switch);
+
     return (
         <div className="header">
             <div className="header-width header-logo">
@@ -62,7 +98,13 @@ function Header() {
                     <Button className="telegram"><TelegramIcon style={{marginRight: '10px'}} />Connect Telegram</Button>
                 </div>
                 <div className="toggle-theme">
-                    toggle
+                    {/* Switch */}
+                    <div className="switch">
+                        <ISOSwitch 
+                            checked={lightMode} 
+                            onChange={() => setlightMode(!lightMode)} 
+                        />
+                    </div>
                 </div>
             </div>
         </div>

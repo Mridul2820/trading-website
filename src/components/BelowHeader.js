@@ -1,4 +1,5 @@
 import React from 'react';
+import BannerImage from './BannerImage';
 
 function BelowHeader() {
     return (
@@ -48,6 +49,11 @@ function BelowHeader() {
                     </div>
                 </div>
             </div>
+            <BannerImage 
+                srcLink={"https://finstreet.in/"}
+                srcBanner={"https://hodlinfo.com/static/media/cryptonews.54869ee3.png"}
+                style={{padding: '10px'}}
+            />
         </div>
     )
 }
