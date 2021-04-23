@@ -1,6 +1,4 @@
 import React from 'react';
-import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
-import ArrowDropUpIcon from '@material-ui/icons/ArrowDropUp';
 
 const PlatformPrice = ({ platforms }) => {
     return (
@@ -38,17 +36,17 @@ const PlatformPrice = ({ platforms }) => {
                                     alt={platform.platform} 
                                     className="platform-image"
                                 />
-                                <h4>{platform.platform}</h4> 
+                                <h4>{platform.platform}</h4>
                             </a>
 
                         </td>
                         <td>
-                            <h4>₹ {platform.lastprice}</h4>
+                            <h4>₹ {platform.lastprice.toLocaleString('en-IN')}</h4>
                         </td>
                         <td>
                             <h4>
-                                <span>₹ {platform.buyPrice}</span> /
-                                <span> ₹ {platform.sellPrice}</span>
+                                <span>₹ {platform.buyPrice.toLocaleString('en-IN')}</span> /
+                                <span> ₹ {platform.sellPrice.toLocaleString('en-IN')}</span>
                             </h4>
                         </td>
                         <td className="difference">
@@ -67,9 +65,9 @@ const PlatformPrice = ({ platforms }) => {
                                 : 'color-neg' }`}
                             >
                                 {(platform.buyPrice - platform.sellPrice) > 0 
-                                ? <ArrowDropDownIcon style={{fontSize: '30px'}} />
-                                : <ArrowDropUpIcon size="2x"  /> }
-                                ₹ {(platform.buyPrice) - (platform.sellPrice)}
+                                ? '▼'
+                                : '▲' }
+                                ₹ {(platform.buyPrice - platform.sellPrice).toLocaleString('en-IN')}
                             </h4>
                         </td>
                     </tr>

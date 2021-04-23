@@ -23,7 +23,7 @@ const data = [
         link: 'https://hodlinfo.com/',
         image : 'Giotus',
         lastprice : 4313445,
-        buyPrice: 4313445,
+        buyPrice: 4413445,
         sellPrice: 4483900
     },
     {

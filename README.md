@@ -6,4 +6,4 @@ The Project can be viewd at [Netlify](https://trading-react-demo.netlify.app/)
 
 ## Available Deploy on Vercel
 
-The Project can be viewd at [Vercel](https://inshorts-clone.vercel.app/)
+The Project can be viewd at [Vercel](https://trading-website.vercel.app/)
