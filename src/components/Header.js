@@ -101,7 +101,7 @@ function Header({ lightMode, setlightMode }) {
                     {/* Switch */}
                     <div className="switch">
                         <ISOSwitch 
-                            checked={lightMode} 
+                            checked={!lightMode} 
                             onChange={() => setlightMode(!lightMode)} 
                         />
                     </div>

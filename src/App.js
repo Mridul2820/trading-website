@@ -15,7 +15,11 @@ const App = () => {
     const [lightMode, setlightMode] = useState(false)
 
     return (
-        <div className="app">
+        <div style={{
+            backgroundColor: lightMode ? "#fff" : "#191d28",
+            // color: lightMode ? "#000" : "#fff",
+            transition: "all .5s"
+        }}>
             <Header 
                 lightMode={lightMode} 
                 setlightMode={setlightMode} 
