@@ -1,4 +1,5 @@
 import React from 'react';
+import BannerImage from './BannerImage';
 
 
 function BelowHeader() {
@@ -49,9 +50,6 @@ function BelowHeader() {
                     </div>
                 </div>
             </div>
-            <a href="https://finstreet.in/" target="_blank">
-                <img src="https://hodlinfo.com/static/media/cryptonews.54869ee3.png" style={{width: '100%', padding: '0px 0px 20px'}}/>
-            </a>
         </div>
     )
 }

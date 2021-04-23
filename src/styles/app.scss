@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
 $primary-color : #3dc6c1;
+$secondary-color : #da5757;
 
 * {
     padding: 0;
@@ -16,3 +17,4 @@ $primary-color : #3dc6c1;
 @import './header';
 @import './belowheader';
 @import './footer';
+@import './platfromprice';

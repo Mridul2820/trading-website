@@ -2,7 +2,8 @@ const data = [
     {
         id : 1,
         platform : 'WazirX',
-        img : 'WazirX',
+        link: 'https://wazirx.com/invite/sp7pvbt6?utm_source=finstreet&utm_medium=affiliate&utm_campaign=regnow-btn',
+        image : 'WazirX',
         lastprice : 4287500,
         buyPrice: 4273500,
         sellPrice: 4274399,
@@ -10,7 +11,8 @@ const data = [
     {
         id : 2,
         platform : 'Bitbns',
-        img : 'Bitbns',
+        link: 'https://bitbns.com/trade/?utm_source=refID_35_2021-04-23&utm_medium=referral_link&utm_campaign=referral#/signup',
+        image : 'Bitbns',
         lastprice : 4238947,
         buyPrice: 4230992,
         sellPrice: 4237647
@@ -18,7 +20,8 @@ const data = [
     {
         id : 3,
         platform : 'Giotus',
-        img : 'Giotus',
+        link: 'https://hodlinfo.com/',
+        image : 'Giotus',
         lastprice : 4313445,
         buyPrice: 4313445,
         sellPrice: 4483900
@@ -26,7 +29,8 @@ const data = [
     {
         id : 4,
         platform : 'Colodax',
-        img : 'Colodax',
+        link: 'https://hodlinfo.com/',
+        image : 'Colodax',
         lastprice : 2583138,
         buyPrice: 2575167,
         sellPrice: 2608984
@@ -34,7 +38,8 @@ const data = [
     {
         id : 5,
         platform : 'Zebpay',
-        img : 'Zebpay',
+        link: 'https://hodlinfo.com/',
+        image : 'Zebpay',
         lastprice : 4310000,
         buyPrice: 4310000 ,
         sellPrice: 4301600
@@ -42,7 +47,8 @@ const data = [
     {
         id : 6,
         platform : 'CoinDCX',
-        img : 'CoinDCX',
+        link: 'https://hodlinfo.com/',
+        image : 'CoinDCX',
         lastprice : 4225500,
         buyPrice: 4206202 ,
         sellPrice: 4226752
