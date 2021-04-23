@@ -6,7 +6,6 @@ import { Switch, withStyles } from '@material-ui/core'
 
 function Header({ lightMode, setlightMode }) {
 
-
     const ISOSwitch = withStyles({
         root: {
             width: 60,
@@ -32,7 +31,6 @@ function Header({ lightMode, setlightMode }) {
           },
           track: {
             borderRadius: 34 / 2,
-            border: '1px solid #3dc6c1',
             backgroundColor: '#f8f9fa',
             opacity: 1,
             transition: '.5s',
@@ -54,8 +52,9 @@ function Header({ lightMode, setlightMode }) {
                 <div className="header-button">
                     <Button 
                         style={{
-                            backgroundColor: '#2e3241', 
-                            color: '#fff', 
+                            backgroundColor: lightMode ? '#f8f9fa' :  '#2e3241' , 
+                            color: lightMode ? '#2e3241' : '#fff', 
+                            transition: "all .5s",
                             borderRadius: '10px',
                             fontSize: '16px',
                             padding: '4px 14px',
@@ -67,8 +66,9 @@ function Header({ lightMode, setlightMode }) {
                 <div className="header-button">
                     <Button 
                         style={{
-                            backgroundColor: '#2e3241', 
-                            color: '#fff', 
+                            backgroundColor: lightMode ? '#f8f9fa' :  '#2e3241' , 
+                            color: lightMode ? '#2e3241' : '#fff', 
+                            transition: "all .5s",
                             borderRadius: '10px',
                             fontSize: '16px',
                             padding: '4px 14px',
@@ -80,8 +80,9 @@ function Header({ lightMode, setlightMode }) {
                 <div className="header-button">
                     <Button 
                         style={{
-                            backgroundColor: '#2e3241', 
-                            color: '#fff', 
+                            backgroundColor: lightMode ? '#f8f9fa' :  '#2e3241' , 
+                            color: lightMode ? '#2e3241' : '#fff', 
+                            transition: "all .5s",
                             borderRadius: '10px',
                             fontSize: '16px',
                             padding: '4px 14px',
@@ -92,7 +93,7 @@ function Header({ lightMode, setlightMode }) {
             </div>
             <div className="header-width header-right">
                 <div className="progress-bar">
-                    <p>15</p>
+                    <p>60</p>
                 </div>
                 <div className="telegram-button">
                     <Button className="telegram"><TelegramIcon style={{marginRight: '10px'}} />Connect Telegram</Button>

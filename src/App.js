@@ -24,9 +24,14 @@ const App = () => {
                 lightMode={lightMode} 
                 setlightMode={setlightMode} 
             />
-            <BelowHeader />
+            <BelowHeader 
+                lightMode={lightMode} 
+            />
 
-            <PlatformPrice platforms={platforms} />
+            <PlatformPrice 
+                platforms={platforms} 
+                lightMode={lightMode} 
+            />
             <BannerImage 
                 srcLink={"https://ftx.com/"}
                 srcBanner={"https://hodlinfo.com/static/media/BannerFTXNews.d0cd974b.png"}

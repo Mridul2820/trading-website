@@ -1,6 +1,6 @@
 import React from 'react';
 
-const PlatformPrice = ({ platforms }) => {
+const PlatformPrice = ({ platforms, lightMode }) => {
     return (
         <table className="platform-price">
             <thead>
@@ -27,10 +27,25 @@ const PlatformPrice = ({ platforms }) => {
             </thead>
             <tbody>
                 {platforms.map(platform => (
-                    <tr key={platform.id}>
+                    <tr 
+                        key={platform.id} 
+                        style={{
+                            backgroundColor: lightMode ? "#f8f9fa" : "#2e3241",
+                            color: lightMode ? "#0c0f48" : "#fff",
+                            transition: "all .5s"
+                        }}
+                    >
                         <td><h4>{platform.id}</h4></td>
                         <td className="platform">
-                            <a href={platform.link} target="_blank" rel="noreferrer">
+                            <a 
+                                href={platform.link} 
+                                target="_blank" 
+                                rel="noreferrer"
+                                style={{
+                                    color: lightMode ? "#0c0f48" : "#fff",
+                                    transition: "all .5s"
+                                }}
+                            >
                                 <img 
                                     src={`./assets/${platform.image}.png`} 
                                     alt={platform.platform} 

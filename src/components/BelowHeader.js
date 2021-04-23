@@ -1,10 +1,14 @@
 import React from 'react';
 import BannerImage from './BannerImage';
 
-function BelowHeader() {
+function BelowHeader({ lightMode }) {
     return (
         <div className="belowHeader">
-            <div className="numbers">
+            <div className="numbers"
+            style={{
+                color: lightMode ? '#0c0f48' : '#ccc',
+                transition: "all .5s"
+            }}>
                 <div className="number">
                     <div className="topHeader">
                         <h2>0.72%</h2>
@@ -25,7 +29,13 @@ function BelowHeader() {
                     <div className="upperHeading">
                         <span>Best Price to Trade</span>
                     </div>
-                    <div className="middle" style={{paddingBottom: '10px'}}>
+                    <div 
+                        className="middle" 
+                        style={{
+                            paddingBottom: '10px',
+                            color: lightMode ? '#0c0f48' : '#fff', 
+                        }}
+                    >
                         <h2>₹ 40,20,649</h2>
                     </div>
                     <div className="lowerHeading">
