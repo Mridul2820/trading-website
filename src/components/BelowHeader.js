@@ -1,6 +1,4 @@
 import React from 'react';
-import BannerImage from './BannerImage';
-
 
 function BelowHeader() {
     return (
